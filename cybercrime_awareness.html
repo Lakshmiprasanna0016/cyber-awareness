@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CyberShield helps you stay safe online by teaching how to identify cyber threats, phishing scams, and protect personal information. Learn cyber safety tips and report cybercrime easily.">
+<meta name="keywords" content="cyber crime awareness, online safety, phishing, ransomware, cyber security tips, cybercrime reporting">
+<meta name="author" content="CyberShield Team">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://yourdomain.com/">
+
+<!-- Open Graph (Facebook, LinkedIn) -->
+<meta property="og:title" content="CyberShield - Stay Safe Online">
+<meta property="og:description" content="Learn, recognize, and protect yourself from cybercrime with CyberShield's practical safety tips.">
+<meta property="og:image" content="https://yourdomain.com/images/cybershield-banner.jpg">
+<meta property="og:url" content="https://yourdomain.com/">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CyberShield - Stay Safe Online">
+<meta name="twitter:description" content="Learn to identify threats, protect data, and report cybercrimes safely.">
+<meta name="twitter:image" content="https://yourdomain.com/images/cybershield-banner.jpg">
+
+    <title>CyberShield - Stay Safe Online</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: fadeInDown 1s;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s;
+        }
+
+        .cta-button {
+            background: #ffd700;
+            color: #333;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeInUp 1s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .threats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .threat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            color: white;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .threat-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .threat-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .tips-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .tips-list li {
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .tips-list li:hover {
+            background: #e9ecef;
+        }
+
+        .report-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .report-section h2 {
+            color: white;
+        }
+
+        .emergency-box {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .emergency-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                🛡️ CyberShield
+            </div>
+            <ul class="nav-links">
+                <li><a href="#threats">Threats</a></li>
+                <li><a href="#tips">Safety Tips</a></li>
+                <li><a href="#report">Report</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Stay Safe in the Digital World</h1>
+        <p>Learn, Recognize, and Protect Yourself from Cybercrime</p>
+        <button class="cta-button" onclick="document.getElementById('threats').scrollIntoView({behavior: 'smooth'})">
+            Learn More
+        </button>
+    </section>
+
+    <div class="container">
+        <section id="threats" class="section">
+            <h2>Common Cyber Threats</h2>
+            <p>Understanding these threats is your first line of defense against cybercriminals.</p>
+            
+            <div class="threats-grid">
+                <div class="threat-card">
+                    <h3>🎣 Phishing</h3>
+                    <p>Fraudulent emails or messages that trick you into revealing personal information, passwords, or financial details.</p>
+                </div>
+                
+                <div class="threat-card">
+                    <h3>🔒 Ransomware</h3>
+                    <p>Malicious software that locks your files and demands payment for their release.</p>
+                </div>
+                
+                <div class="threat-card">
+                    <h3>💳 Identity Theft</h3>
+                    <p>Criminals steal your personal information to commit fraud or other crimes in your name.</p>
+                </div>
+                
+                <div class="threat-card">
+                    <h3>📱 Social Engineering</h3>
+                    <p>Manipulating people into divulging confidential information through psychological tricks.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tips" class="section">
+            <h2>Essential Safety Tips</h2>
+            <ul class="tips-list">
+                <li><strong>Use Strong Passwords:</strong> Create unique passwords with a mix of letters, numbers, and symbols. Use a password manager to keep track of them.</li>
+                
+                <li><strong>Enable Two-Factor Authentication:</strong> Add an extra layer of security to your accounts by requiring a second form of verification.</li>
+                
+                <li><strong>Think Before You Click:</strong> Don't click on suspicious links in emails or messages. Verify the sender's identity first.</li>
+                
+                <li><strong>Keep Software Updated:</strong> Regular updates patch security vulnerabilities that criminals could exploit.</li>
+                
+                <li><strong>Secure Your Wi-Fi:</strong> Use a strong password for your home network and avoid public Wi-Fi for sensitive transactions.</li>
+                
+                <li><strong>Backup Your Data:</strong> Regularly backup important files to an external drive or cloud service to protect against ransomware.</li>
+                
+                <li><strong>Verify Before Sharing:</strong> Never share personal or financial information unless you've verified the recipient's legitimacy.</li>
+            </ul>
+        </section>
+
+        <section id="report" class="section report-section">
+            <h2>Report Cybercrime</h2>
+            <p>If you've been a victim of cybercrime, it's important to report it immediately.</p>
+            
+            <div class="emergency-box">
+                <h3>Emergency Contacts</h3>
+                <p><strong>National Cyber Crime Reporting Portal (India):</strong><br>
+                Visit: cybercrime.gov.in<br>
+                Helpline: 1930</p>
+                
+                <p style="margin-top: 1rem;"><strong>FBI Internet Crime Complaint Center (USA):</strong><br>
+                Visit: ic3.gov</p>
+                
+                <p style="margin-top: 1rem;"><strong>Action Fraud (UK):</strong><br>
+                Call: 0300 123 2040</p>
+            </div>
+            
+            <p style="margin-top: 2rem;">
+                <strong>Steps to Take:</strong><br>
+                1. Document everything (screenshots, emails, messages)<br>
+                2. Report to local authorities and cybercrime units<br>
+                3. Change passwords immediately<br>
+                4. Monitor your financial accounts<br>
+                5. Inform your bank if financial fraud is involved
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CyberShield - Empowering Digital Safety</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Stay vigilant. Stay safe. Stay informed.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add interaction to threat cards
+        document.querySelectorAll('.threat-card').forEach(card => {
+            card.addEventListener('click', function() {
+                this.style.transform = 'scale(1.05)';
+                setTimeout(() => {
+                    this.style.transform = 'translateY(-10px)';
+                }, 200);
+            });
+        });
+    </script>
+</body>
+</html>
