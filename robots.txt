@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cyber-awareness-eta.vercel.app/sitemap.xml
